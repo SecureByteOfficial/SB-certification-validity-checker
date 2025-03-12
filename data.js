@@ -1,5 +1,5 @@
 const certificates = [
-    { number: "CSCI-20250310-MDFAHI-00001", name: "MD FAHIM MORSHED", batch: "1", status: "Explorer", job: "Cybersecurity Engineer", expiry: "2027-03-10", picture: "girl.webp", issueDate: "2025-03-10" },
+    { number: "CSCI-20250310-MDFAHI-00001", name: "MD FAHIM MORSHED", batch: "1", status: "Topper", job: "Cybersecurity Engineer", expiry: "2027-03-10", picture: "girl.webp", issueDate: "2025-03-10" },
     { number: "CSCI-20250310-ARNOBP-00002", name: "Arnob Paul", batch: "1", status: "Explorer", job: "Cybersecurity Engineer", expiry: "2027-03-10", picture: "girl.webp", issueDate: "2025-03-10" },
     { number: "CSCI-20250310-MDSAZZ-00003", name: "MD SAZZAD HOSSAIN LIKHON", batch: "1", status: "Explorer", job: "Cybersecurity Engineer", expiry: "2027-03-10", picture: "girl.webp", issueDate: "2025-03-10" },
     { number: "CSCI-20250310-FAHIMF-00004", name: "Fahim Faysal", batch: "1", status: "Explorer", job: "Cybersecurity Engineer", expiry: "2027-03-10", picture: "girl.webp", issueDate: "2025-03-10" },
