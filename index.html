@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification Validity Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="data.js"></script>
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rubik+Glitch&family=Audiowide&family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    
+        
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <!-- Logo & Company Name -->
+            <div class="logo">
+                <img src="logo.png" alt="CertifyPro Logo">
+                <h1>SecureByte</h1>
+            </div>
+    
+            <!-- Navigation Menu -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+    
+    
+    <header>
+        <div class="container">
+            <h1>Verify Your Certification</h1>
+            <div class="search-box">
+                <input type="text" id="certificateInput" placeholder="Enter Certificate Number" oninput="searchCertificate()">
+                <button onclick="searchCertificate()" class="search-btn">
+                    <img src="search-icon.png" alt="Search" class="search-icon">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <section id="certificate-list" class="container">
+        <!-- Certificate details will be dynamically injected here -->
+    </section>
+
+    <div id="certificate-popup" class="certificate-popup hidden">
+        <div class="certificate-content">
+            <img src="csci.png" class="certificate-icon" alt="Certificate Icon">
+            <h2 class="certificate-title">Certified SecureByte CyberSecurity Intern</h2>
+            <p class="certificate-text">This is to acknowledge that</p>
+            <h3 id="cert-name" class="cert-name"></h3>
+            <p class="certificate-text">has successfully completed all requirements and criteria for</p>
+            <h2 class="cert-glow">Certified SecureByte Cyber Security Intern (CSCI)</h2>
+            <p id="cert-id" class="cert-id"></p>
+            <p id="cert-issue" class="cert-details"></p>
+            <p id="cert-batch" class="cert-details"></p>
+            <p id="cert-expiry" class="cert-details"></p>
+            <img id="cert-photo" class="cert-photo" alt="Profile Picture">
+            <button onclick="closePopup()" class="close-btn">Close</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+/* Navbar Container */
+nav {
+    background: #1d3557;
+    padding: 15px 30px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Navbar Flexbox */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261; /* Highlight color on hover */
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hidden on desktop */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide menu on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background: #1d3557;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger on mobile */
+    }
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: url('campusamb.png') no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #457b9d;
+}
+
+.certificate-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    border: 8px solid rgb(24, 10, 233);
+}
+
+.hidden {
+    display: none;
+}
+
+.certificate-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.cert-glow {
+    font-family: 'Orbitron', sans-serif; /* Change to 'Rubik Glitch' for a glitchy effect */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffff; /* Neon Cyan */
+    text-shadow: 0 0 5px #f200ff, 0 0 10px #0088ff, 0 0 15px #0066ff; /* Neon Glow */
+    letter-spacing: 2px;
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+
+.cert-id, .cert-details {
+    font-size: 14px;
+    color: #333;
+}
+
+.cert-name {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ff00; /* Neon Green (Hacker Style) */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #008000; /* Glowing Effect */
+    background-color: black;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+.certificate-icon {
+    width: 80px;
+    position: absolute;
+    bottom: 05px;
+    left: 10px;
+}
+
+.cert-photo {
+    width: 100px;
+    height: 120px;
+    border: 3px solid #000;
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+}
+
+.close-btn {
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #457b9d;
+}
+
+.search-btn {
+    background: #457b9d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
